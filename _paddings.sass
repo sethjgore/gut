@@ -1,0 +1,10 @@
+@for $i from 0 through 60
+  $n: (.1 * $i)rem
+  .p#{$i}
+    padding: $i
+  .py#{$i}
+    padding-top: $n
+    padding-bottom: $n
+  .px#{$i}
+    padding-left: $n
+    padding-right: $n

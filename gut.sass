@@ -1,23 +1,2 @@
-@for $i from 0 through 120
-  $n: (.1 * $i)rem
-  .m#{$i}
-    margin: $i
-  .mt#{$i}
-    margin-top: $n
-  .mb#{$i}
-    margin-bottom: $n
-  .ml#{$i}
-    margin-left: $n
-  .mr#{$i}
-    margin-right: $n
-
-@for $i from 0 through 60
-  $n: (.1 * $i)rem
-  .p#{$i}
-    padding: $i
-  .py#{$i}
-    padding-top: $n
-    padding-bottom: $n
-  .px#{$i}
-    padding-left: $n
-    padding-right: $n
+@import "margins"
+@import "paddings"
