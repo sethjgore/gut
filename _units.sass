@@ -1,6 +1,16 @@
+//explodes into viewport units
 @for $i from 0 through 20
   $n: (5 * $i)
   .is#{$n}vh
     height: #{$n}vh
   .is#{$n}vw
     width: #{$n}vw
+
+//explodes into rem units
+@for $i from 0 through 20
+  $name: (5 * $i)
+  $n: (5 * $i)rem
+  .is#{$name}rem
+    height: #{$n}
+  .is#{$name}rem
+    width: #{$n}
