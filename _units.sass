@@ -8,9 +8,8 @@
 
 //explodes into rem units
 @for $i from 0 through 20
-  $name: (5 * $i)
-  $n: (5 * $i)rem
-  .is#{$name}rem
-    height: #{$n}
-  .is#{$name}rem
-    width: #{$n}
+  $n: (5 * $i)
+  .is#{$n}rem
+    height: #{$n}rem
+  .is#{$n}rem
+    width: #{$n}rem
