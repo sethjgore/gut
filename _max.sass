@@ -1,0 +1,27 @@
+///////////////////
+//MAX-WIDTH:
+///////////////////
+
+//explodes into viewport units
+@for $i from 0 through 20
+  $n: (5 * $i)
+  .is#{$n}vh--max
+    max-height: #{$n}vh
+  .is#{$n}vw--max
+    max-width: #{$n}vw
+
+//explodes into rem units (1 to 9, 1n)
+@for $i from 0 through 9
+  $n: ($i)
+  .ish#{$n}rem--max
+    max-height: #{$n}rem
+  .isw#{$n}rem--max
+    max-width: #{$n}rem
+
+//explodes into rem units (10 to 100, 5n)
+@for $i from 0 through 20
+  $n: (5 * $i)
+  .ish#{$n}rem--max
+    max-height: #{$n}rem
+  .isw#{$n}rem--max
+    max-width: #{$n}rem
