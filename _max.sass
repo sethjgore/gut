@@ -1,6 +1,15 @@
 ///////////////////
 //MAX-WIDTH:
+//MAX-HEIGHT:
 ///////////////////
+
+//explodes into percentage units
+@for $i from 0 through 20
+  $n: (5 * $i)
+  .is#{$n}--max
+    max-height: #{$n}%
+  .is#{$n}--max
+    max-width: #{$n}%
 
 //explodes into viewport units
 @for $i from 0 through 20
