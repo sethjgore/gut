@@ -1,3 +1,11 @@
+//explodes into percentage units
+@for $i from 0 through 20
+  $n: (5 * $i)
+  .is#{$n}
+    height: #{$n}%
+  .is#{$n}
+    width: #{$n}%
+
 //explodes into viewport units
 @for $i from 0 through 20
   $n: (5 * $i)
